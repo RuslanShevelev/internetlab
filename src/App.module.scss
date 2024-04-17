@@ -1,4 +1,4 @@
-@import-normalize;
+// @import-normalize;
 
 .wrapper {
   width: 100%;
@@ -60,6 +60,9 @@
   /* Group 214 */
 max-width: 748px;
 height: 334px;
+display: flex;
+flex-direction: column;
+align-items: center;
 &__title {
   /* Headline 1 */
   color: rgb(255, 255, 255);
