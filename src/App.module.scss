@@ -21,22 +21,24 @@
 } */
 
 .container {
-  max-width: 1920px;
-  width: 100%;
-  margin: 0 auto;
+  // max-width: 1920px;
+  // width: 100vw;
+  // margin: 0 auto;
   background-color: #ffffff;
 }
 .main {
   /* Group 213 */
-  width: 1920px;
-  height: 960px;
+  width: 100vw;
+  height: 100vh;
   position: relative;
   z-index: 0;
   /* Primary */
   background-image: url("../public/images/Lunch_atop_a_Skyscraper.png");
   // background-color: rgba(42, 108, 234 / 0.8);
   // background-color: red;
-  background-size: contain;
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: center top;
   display: flex;
   align-items: center;
     justify-content: center;
@@ -56,6 +58,39 @@
     background-color: rgba(42, 108, 234, 0.8);
   }
 }
+.header{
+position: absolute;
+width: 100%;
+height: 80px;
+left: 0px;
+top: 0px;
+display: flex;
+justify-content: space-around;
+align-items: center;
+&__navbar{
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 24px;
+width: 464px;
+height: 28px;
+}
+&__link{
+font-size: 16px;
+line-height: 28px;
+color: #FFFFFF;
+&:hover{
+  text-decoration-line: underline;
+}
+}
+&__burger{
+  width: 62px;
+height: 62px;
+display: none;
+}
+}
+
 .content{
   /* Group 214 */
 max-width: 748px;
@@ -63,6 +98,7 @@ height: 334px;
 display: flex;
 flex-direction: column;
 align-items: center;
+justify-content: space-between;
 &__title {
   /* Headline 1 */
   color: rgb(255, 255, 255);
@@ -71,6 +107,7 @@ align-items: center;
   line-height: 64px;
   letter-spacing: 0%;
   text-align: center;
+  margin-bottom: 18px;
 }
 &__text {/* Сделай круто тестовое задание и у тебя получится */
 /* Body 18 */
@@ -97,7 +134,7 @@ border: 1px solid rgb(194, 200, 205);
 border-radius: 4px;
 
 /* White */
-background: rgb(255, 255, 255);
+background: rgb(236, 239, 242);
 /* Headline 5 */
 color: rgb(25, 28, 31);
 font-size: 20px;
@@ -106,6 +143,52 @@ line-height: 24px;
 letter-spacing: 0%;
 text-align: center;
 }}
+// ================== Медиа ====================================
+
+@media screen and (max-width: 768px) {
+  .content{
+    /* Group 214 */
+  max-width: 476px;
+  height: 229px;
+  &__title {
+    font-size: 32px;
+    line-height: 40px;
+    margin-bottom: 17px;
+  }
+  &__text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  }
+}
+.header{
+  justify-content: space-between;
+  &__logo{
+    margin-left: 17px;
+  }
+  &__navbar{
+  display: none;
+  }
+&__burger{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+}
+
+}
+@media screen and (max-width: 375px) {
+  .content{
+  max-width: 288px;
+  height: 252px;
+  &__title {
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 10px;
+  }
+}
+}
 /* 
 .App {
   text-align: center;
