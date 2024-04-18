@@ -1,0 +1,21 @@
+.item{
+width: 280px;
+// height: 164px;
+&__image{
+width: 72px;
+height: 72px;
+margin-bottom: 16px;
+}
+&__title{
+font-weight: 600;
+font-size: 16px;
+line-height: 24px;
+color: #191C1F;
+margin-bottom: 4px;
+}
+&__text{
+font-size: 14px;
+line-height: 24px;
+color: #5E646A;
+}  
+}

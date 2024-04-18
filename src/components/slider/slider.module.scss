@@ -1,0 +1,69 @@
+.slider {
+  overflow: hidden;
+  position: relative;
+
+
+}
+.slide {
+  width: 341px;
+  height: 316px;
+  flex: 1 0 100%;
+  position: relative;
+  border-radius: 8px;
+
+  box-shadow: 0px 15px 24px 0px rgba(0, 0, 0, 0.1);
+  background: rgb(255, 255, 255);
+  &__content {
+    width: 297px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0px;
+  }
+  &__author {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  &__image {
+    display: flex;
+    margin: 0 auto;
+    max-height: 300px;
+    width: 100%;
+    object-fit: contain;
+  }
+  &__name {
+    color: rgb(25, 28, 31);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: left;
+  }
+  &__city {
+    color: rgb(94, 100, 106);
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0%;
+    text-align: left;
+  }
+  &__review {
+    text-align: left;
+    margin-top: 10px;
+    color: rgb(25, 28, 31);
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0%;
+  }
+}
+.slide_list {
+    display: flex;
+    height: 100%;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+  }
