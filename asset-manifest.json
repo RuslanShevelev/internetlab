@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/internetlab/static/css/main.3c95010f.css",
+    "main.js": "/internetlab/static/js/main.31ce040a.js",
+    "static/media/Lunch_atop_a_Skyscraper.png": "/internetlab/static/media/Lunch_atop_a_Skyscraper.adc6593cafa92d42310c.png",
+    "static/media/GraphikLCG-Regular.ttf": "/internetlab/static/media/GraphikLCG-Regular.35faf011ef568c1b8540.ttf",
+    "static/media/2_1.png": "/internetlab/static/media/2_1.54fa9c5709d6beab4dd8.png",
+    "static/media/GraphikLCG-Regular.woff": "/internetlab/static/media/GraphikLCG-Regular.b4fc93d5073c5d6f5235.woff",
+    "static/media/GraphikLCG-Regular.woff2": "/internetlab/static/media/GraphikLCG-Regular.92a1ff709799ec31f9f0.woff2",
+    "static/media/2_2.png": "/internetlab/static/media/2_2.e9fd75b90a93dc3bce95.png",
+    "index.html": "/internetlab/index.html",
+    "main.3c95010f.css.map": "/internetlab/static/css/main.3c95010f.css.map",
+    "main.31ce040a.js.map": "/internetlab/static/js/main.31ce040a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3c95010f.css",
+    "static/js/main.31ce040a.js"
+  ]
+}
