@@ -1,4 +1,3 @@
-// @import-normalize;
 
 .wrapper {
   width: 100%;
@@ -8,18 +7,6 @@
   display: flex;
   flex-direction: column;
 }
-/* .modalBg {
-  position: fixed;
-  inset: 0;
-  width: auto;
-  height: auto;
-  background-color: rgba(0, 0, 0, 0.75);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  align-content: center;
-} */
-
 .container {
   display: flex;
   flex-direction: column;
@@ -29,24 +16,17 @@
   background: rgb(255, 255, 255);
 }
 .main {
-  /* Group 213 */
   width: 100vw;
   height: 100vh;
   position: relative;
   z-index: 0;
-  /* Primary */
   background-image: url("../public/images/Lunch_atop_a_Skyscraper.png");
-  // background-color: rgba(42, 108, 234 / 0.8);
-  // background-color: red;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center top;
   display: flex;
   align-items: center;
   justify-content: center;
-  // background: rgb(42, 108, 234);
-  // background-blend-mode: hue;
-  // opacity: 0.8;
   &:before {
     content: "";
     position: absolute;
@@ -56,7 +36,6 @@
     left: 0;
     width: 100%;
     height: 100%;
-    /* Оверлей поверх картинки с прозрачностью 50% */
     background-color: rgba(42, 108, 234, 0.8);
   }
 }
@@ -94,7 +73,6 @@
 }
 
 .content {
-  /* Group 214 */
   max-width: 748px;
   height: 334px;
   display: flex;
@@ -102,7 +80,6 @@
   align-items: center;
   justify-content: space-between;
   &__title {
-    /* Headline 1 */
     color: rgb(255, 255, 255);
     font-size: 52px;
     font-weight: 600;
@@ -112,8 +89,6 @@
     margin-bottom: 18px;
   }
   &__text {
-    /* Сделай круто тестовое задание и у тебя получится */
-    /* Body 18 */
     color: rgb(255, 255, 255);
     font-size: 18px;
     font-weight: 400;
@@ -122,23 +97,17 @@
     text-align: center;
   }
   &__button {
-    /* Button/Large/Default/Regular */
     width: 251px;
     height: 64px;
-    /* Автолейаут */
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     padding: 20px 40px 20px 40px;
     box-sizing: border-box;
-    /* Mid grey */
     border: 1px solid rgb(194, 200, 205);
     border-radius: 4px;
-
-    /* White */
     background: rgb(236, 239, 242);
-    /* Headline 5 */
     color: rgb(25, 28, 31);
     font-size: 20px;
     font-weight: 600;
@@ -153,8 +122,6 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  // height: 281px;
-  // margin-top: 80px;
   &__title {
     width: 338px;
     margin-bottom: 61px;
@@ -166,7 +133,6 @@
   }
   &__content {
     list-style: none;
-    // width: 100%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -202,7 +168,6 @@
     padding: 0px;
   }
   &__title {
-    /* Headline 3 */
     color: rgb(25, 28, 31);
     font-size: 32px;
     font-weight: 600;
@@ -211,7 +176,6 @@
     text-align: left;
   }
   &__text {
-    /* Body 16 */
     color: rgb(94, 100, 106);
     font-size: 16px;
     line-height: 28px;
@@ -219,21 +183,19 @@
     text-align: left;
   }
 }
-.reviews{
+.reviews {
   width: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-background: rgb(246, 248, 250);
-padding: 57px 10px 45px;
-
-  }
+  background: rgb(246, 248, 250);
+  padding: 57px 10px 45px;
+}
 // ================== Медиа ====================================
 
 @media screen and (max-width: 768px) {
   .content {
-    /* Group 214 */
     max-width: 476px;
     height: 229px;
     &__title {
@@ -303,10 +265,9 @@ padding: 57px 10px 45px;
       line-height: 24px;
     }
   }
-
 }
 @media screen and (max-width: 320px) {
-   .thirdBlock {
+  .thirdBlock {
     gap: 27px;
     &__right {
       width: 288px;
@@ -317,47 +278,5 @@ padding: 57px 10px 45px;
       gap: 15px;
     }
   }
-
-}
- 
-
-
-/* 
-.App {
-  text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-} */

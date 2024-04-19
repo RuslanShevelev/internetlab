@@ -1,9 +1,6 @@
 import React, { useEffect, useState, createContext } from "react";
 import PropTypes from "prop-types";
 import styles from "./slider.module.scss";
-// import Arrows from "./components/Controls/Arrows";
-// import Dots from "./components/Controls/Dots";
-
 import SlidesList from "./slidelist";
 
 export const SliderContext = createContext();
@@ -63,7 +60,6 @@ const items = [
 export const Slider = function ({ autoPlay, autoPlayTime }) {
   const [slide, setSlide] = useState(0);
   const [touchPosition, setTouchPosition] = useState(null);
-  console.log(slide);
   const changeSlide = (direction = 1) => {
     let slideNumber = 0;
 
@@ -84,7 +80,7 @@ export const Slider = function ({ autoPlay, autoPlayTime }) {
   };
 
   const handleTouchStart = (e) => {
-    const touchDown = e.touches[0].clientX;
+    const touchDown = e.targetTouches[0].clientX;
 
     setTouchPosition(touchDown);
   };
@@ -93,18 +89,18 @@ export const Slider = function ({ autoPlay, autoPlayTime }) {
     if (touchPosition === null) {
       return;
     }
-
-    const currentPosition = e.touches[0].clientX;
+    const currentPosition = e.targetTouches[0].clientX;
     const direction = touchPosition - currentPosition;
-
-    if (direction > 10) {
+    console.log(direction);
+    if (Math.abs(direction) < 10) {
+      return;
+    }
+    if (direction >= 10) {
       changeSlide(1);
     }
-
-    if (direction < -10) {
+    if (direction <= -10) {
       changeSlide(-1);
     }
-
     setTouchPosition(null);
   };
 
@@ -195,7 +191,6 @@ export const Slider = function ({ autoPlay, autoPlayTime }) {
         </div>
       </div>
       <div className={styles.dots}>{renderDots()}</div>
-
     </div>
   );
 };
