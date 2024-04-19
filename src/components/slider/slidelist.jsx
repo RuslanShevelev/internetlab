@@ -10,7 +10,7 @@ export default function SlidesList() {
   return (
     <div
       className={styles.slide_list}
-      style={{ transform: `translateX(-${slideNumber * 100}%)` }}
+      style={{ transform: `translateX(-${slideNumber / items.length * 100}%)` }}
     >
       {items.map((slide, index) => (
         <Slide key={index} data={slide} />

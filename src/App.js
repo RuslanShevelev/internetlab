@@ -113,7 +113,8 @@ const App = () => {
             </div>
             <div className={styles.thirdBlock__right}></div>
           </div>
-          <Slider/>         
+          <div className={styles.reviews}>
+                    <Slider/>   </div>      
         </div>
       </div>
     </div>

@@ -1,20 +1,50 @@
-.slider {
+.wrapper{
+  display: flex;
+  flex-direction: column;
+}
+.title{
+color: rgb(25, 28, 31);
+font-size: 40px;
+font-weight: 600;
+line-height: 56px;
+letter-spacing: 0%;
+text-align: center;
+}
+.slider{
+display: flex;
+flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 32px;
+}
+.container {
   overflow: hidden;
   position: relative;
-
+  width: 1119px;
+  display: flex;
+  flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 16px 0;
+    margin: 16px 0 34px;
 
 }
 .slide {
   width: 341px;
   height: 316px;
-  flex: 1 0 100%;
+  display: flex;
+  flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
   position: relative;
   border-radius: 8px;
-
-  box-shadow: 0px 15px 24px 0px rgba(0, 0, 0, 0.1);
+  padding: 22px;
+margin: 0 16px;
+  box-shadow: 0px 5px 24px 0px rgba(0, 0, 0, 0.1);
   background: rgb(255, 255, 255);
   &__content {
-    width: 297px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -32,10 +62,10 @@
 
   &__image {
     display: flex;
-    margin: 0 auto;
-    max-height: 300px;
-    width: 100%;
-    object-fit: contain;
+    object-fit:cover;
+width: 44px;
+height: 44px;
+border-radius: 50%;
   }
   &__name {
     color: rgb(25, 28, 31);
@@ -63,7 +93,84 @@
 }
 .slide_list {
     display: flex;
+    justify-content: center;
+    align-items: center;
     height: 100%;
     transition: transform 0.5s ease-in-out;
-    width: 100%;
   }
+.arrow {
+      height: 32px;
+      width: 32px;
+      // svg{fill:#2A6CEA;}
+      &:hover {
+        cursor: pointer;
+              }
+
+      &.left {
+        // background-image: url(../../../assets/icons/arrow.png);
+        // background-repeat: no-repeat;
+        // background-size: contain;
+        margin-left: 5px;
+        transform: rotate(
+180deg);
+      }
+
+      &.right {
+        // background-image: url(../../../assets/icons/arrow.png);
+        // background-repeat: no-repeat;
+        // background-size: contain;
+        margin-right: 5px;
+      }
+    }
+.dot{
+width: 8px;
+height: 8px;
+border-radius: 50%;
+background: rgb(194, 200, 205);
+cursor: pointer;
+}
+.selected{
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+background: rgb(42, 108, 234);
+  }
+.dots{
+  display: flex;
+  justify-content: center;
+  gap:17px;
+}
+// ================== Медиа ====================================
+
+@media screen and (max-width: 1280px) {
+  .container {
+    width: 746px;
+  }
+  .arrow{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .container {
+    width: 746px;
+  }
+  .arrow{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 373px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .container {
+    width: 320px;
+  }
+.slide{
+  width: 288px;
+  height: 335px;
+}
+}
